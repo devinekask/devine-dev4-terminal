@@ -1,6 +1,6 @@
 # Tips
 
-Maak gebruik van de online documentatie op https://github.com/vadimdemedes/ink
+Maak gebruik van de online documentatie op https://github.com/vadimdemedes/ink en https://github.com/vadimdemedes/create-ink-app
 
 ## Installatie
 
@@ -12,9 +12,15 @@ $ cd my-ink-cli
 $ npx create-ink-app
 ```
 
+Reminder: Je app kan je dan runnen als volgt, binnen de `my-ink-cli` directory:
+`node cli.js`
+
+
 ## CommonJS / ESM
 
-Het bovenstaande project werkt via CommonJS. We zijn echter de ESM manier gewoon in de CRA.
+Het bovenstaande project werkt via CommonJS. We zijn echter de ES Modules (ESM) manier gewoon in de Create React App.
+
+Concreet gaan we dependencies moeten **requiren** ipv te **importeren**.
 
 ### Import
 
@@ -41,17 +47,39 @@ export default MyComponent;
 CommonJS
 
 ```js
-module.exports = MyCompont;
+module.exports = MyComponent;
 ```
+
+Bekijk het startproject van Create Ink App, daar vind je dit ook terug:
+```js
+const React = require('react'); 
+const {Text} = require('ink');
+```
+
+Met Create React App zouden we dit namelijk als volgt gedaan hebben:
+```js
+import React from 'react'; 
+import {Text} from 'ink';
+```
+
+Een Menu component zal je bijvoorbeeld met `module.exports = Menu;` moeten exporteren (ipv `export Menu;` in Create React App)
 
 ## Import-jsx
 
-We kunnen niet zomaar components importeren en gebruiken. Dit moeten we doen op de volgende manier:
+We kunnen niet zomaar components importeren en gebruiken. Een component kan je importeren met `import-jsx` (deze dependency werd met Create Ink App mee geïnstalleerd) als volgt:
 
 ```js
 const importJsx = require("import-jsx");
 const MyComponent = importJsx("./components/MyComponent.js");
 ```
+
+**Ter info:** (Import JSX)[https://github.com/vadimdemedes/import-jsx] zal JSX code on the fly transpilen (omzetten naar "gewone" JavaScript). We zouden ook gebruik kunnen maken van Babel (in combinatie met Webpack) om onze JSX te transpilen maar dit is buiten de scope van deze les.
+
+## Fetch
+Wil je data fetchen (bvb. via een externe API)? Gebruik dan de `node-fetch` dependency (installeer die eerst via `yarn add` uiteraard): dit laat toe om de `fetch` API die we (client-side) al gebruiken, ook in een NodeJS omgeving met dezelfde syntax toe te passen.
+
+Zie (A light-weight module that brings window.fetch to Node.js)[https://github.com/node-fetch/node-fetch]
+
 
 ## Useful Components
 
