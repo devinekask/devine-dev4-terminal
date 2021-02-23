@@ -16,6 +16,10 @@ const Menu = ({ onRouteChange }) => {
 			value: "tips",
 		},
 		{
+			label: "Publish",
+			value: "publish",
+		},
+		{
 			label: "Staat dit op punten?",
 			value: "punten",
 		},

@@ -22,6 +22,8 @@ const App = ({ name = "Stranger" }) => {
 				return <Info topic="briefing" />;
 			case "tips":
 				return <Info topic="tips" />;
+			case "publish":
+				return <Info topic="publish" />;
 			case "showcase":
 				return <Showcase />;
 			case "punten":
