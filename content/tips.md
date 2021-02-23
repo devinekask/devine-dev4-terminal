@@ -1,20 +1,19 @@
 # Tips
 
-Maak gebruik van de online documentatie op https://github.com/vadimdemedes/ink en https://github.com/vadimdemedes/create-ink-app
+Maak gebruik van de online documentatie op <https://github.com/vadimdemedes/ink> en <https://github.com/vadimdemedes/create-ink-app>
 
 ## Installatie
 
 Er is een create app beschikbaar, gebruik deze
 
 ```bash
-$ mkdir my-ink-cli
-$ cd my-ink-cli
-$ npx create-ink-app
+mkdir my-ink-cli
+cd my-ink-cli
+npx create-ink-app
 ```
 
 Reminder: Je app kan je dan runnen als volgt, binnen de `my-ink-cli` directory:
 `node cli.js`
-
 
 ## CommonJS / ESM
 
@@ -51,15 +50,17 @@ module.exports = MyComponent;
 ```
 
 Bekijk het startproject van Create Ink App, daar vind je dit ook terug:
+
 ```js
-const React = require('react'); 
-const {Text} = require('ink');
+const React = require("react");
+const { Text } = require("ink");
 ```
 
 Met Create React App zouden we dit namelijk als volgt gedaan hebben:
+
 ```js
-import React from 'react'; 
-import {Text} from 'ink';
+import React from "react";
+import { Text } from "ink";
 ```
 
 Een Menu component zal je bijvoorbeeld met `module.exports = Menu;` moeten exporteren (ipv `export Menu;` in Create React App)
@@ -76,10 +77,10 @@ const MyComponent = importJsx("./components/MyComponent.js");
 **Ter info:** [Import JSX](https://github.com/vadimdemedes/import-jsx) zal JSX code on the fly transpilen (omzetten naar "gewone" JavaScript). We zouden ook gebruik kunnen maken van Babel (in combinatie met Webpack) om onze JSX te transpilen maar dit is buiten de scope van deze les.
 
 ## Fetch
+
 Wil je data fetchen (bvb. via een externe API)? Gebruik dan de `node-fetch` dependency (installeer die eerst via `yarn add` uiteraard): dit laat toe om de `fetch` API die we (client-side) al gebruiken, ook in een NodeJS omgeving met dezelfde syntax toe te passen.
 
 Zie [A light-weight module that brings window.fetch to Node.js](https://github.com/node-fetch/node-fetch)
-
 
 ## Useful Components
 
