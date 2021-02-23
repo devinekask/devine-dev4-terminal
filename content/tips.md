@@ -73,12 +73,12 @@ const importJsx = require("import-jsx");
 const MyComponent = importJsx("./components/MyComponent.js");
 ```
 
-**Ter info:** (Import JSX)[https://github.com/vadimdemedes/import-jsx] zal JSX code on the fly transpilen (omzetten naar "gewone" JavaScript). We zouden ook gebruik kunnen maken van Babel (in combinatie met Webpack) om onze JSX te transpilen maar dit is buiten de scope van deze les.
+**Ter info:** [Import JSX](https://github.com/vadimdemedes/import-jsx) zal JSX code on the fly transpilen (omzetten naar "gewone" JavaScript). We zouden ook gebruik kunnen maken van Babel (in combinatie met Webpack) om onze JSX te transpilen maar dit is buiten de scope van deze les.
 
 ## Fetch
 Wil je data fetchen (bvb. via een externe API)? Gebruik dan de `node-fetch` dependency (installeer die eerst via `yarn add` uiteraard): dit laat toe om de `fetch` API die we (client-side) al gebruiken, ook in een NodeJS omgeving met dezelfde syntax toe te passen.
 
-Zie (A light-weight module that brings window.fetch to Node.js)[https://github.com/node-fetch/node-fetch]
+Zie [A light-weight module that brings window.fetch to Node.js](https://github.com/node-fetch/node-fetch)
 
 
 ## Useful Components
