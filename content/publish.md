@@ -1,9 +1,9 @@
 # Een project publiceren
 We willen dat andere mensen onze app kunnen installeren. Hiervoor moeten we deze registreren op de NPM registry.
 Maak een account aan op [npmjs.com](https://npmjs.com)
- 
+
 Een project publiceren kan als volgt:
-yarn publish
+`yarn publish`
 
 ![step 1](assets/publish-01.png)
 
