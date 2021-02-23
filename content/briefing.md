@@ -7,7 +7,7 @@ Have fun
 ## Serieus nu
 
 Je werkt in een groep van 4. Één teamlid maakt een Github project aan en voegt alle teamleden aan het project zodat je met 4 kan samenwerken.
-Het doel vandaag is om een “command line app” te bouwen. 
+Het doel vandaag is om een “command line app” te bouwen.
 
 Maak gebruik van Ink (https://github.com/vadimdemedes/ink):
 “Ink provides the same component-based UI building experience that React offers in the browser, but for command-line apps.”.
@@ -34,8 +34,8 @@ Een nieuwe app maken kan als volgt (opgelet: zorgt dat je een nieuwe folder maak
 
 Je app kan je dan runnen als volgt:
 `node cli.js`
-Je zou dit als output moeten krijgen in je terminal: Hello, Stranger
+Je zou dit als output moeten krijgen in je terminal: `Hello, Stranger`
+
+![Create Ink App](../content/assets/create-ink-app.png)
 
 Er zijn wel enkele verschillen met de Create React App, zie hiervoor de 'Tips' section
-
-
