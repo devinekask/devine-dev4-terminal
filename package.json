@@ -20,7 +20,8 @@
 	"files": [
 		"cli.js",
 		"ui.js",
-		"components/*"
+		"components/*",
+		"content/*"
 	],
 	"dependencies": {
 		"fs": "^0.0.1-security",
