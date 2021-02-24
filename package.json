@@ -24,7 +24,6 @@
 		"content/*"
 	],
 	"dependencies": {
-		"fs": "^0.0.1-security",
 		"import-jsx": "^4.0.0",
 		"ink": "^3.0.8",
 		"ink-big-text": "^1.2.0",
